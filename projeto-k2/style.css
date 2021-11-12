@@ -4,13 +4,22 @@
 
 @font-face {
     font-family:'CloisterBlack';
-    src: url('../fonte/CloisterBlack.ttf') format('opentype');
+    
+    src: url('../fonte/Nunito-ExtraLight.ttf') format('opentype');
+    
     font-weight: normal;
 }
+ 
 :root {
-    --cor0: #FCAE7D;
-    --cor1: #EA624C;
-    --cor2: #BB283B;
+
+    /* azul 1
+    --cor0: #3A4365;
+    --cor1: #5C6480;
+    --cor2: #787F96; */
+ 
+    --cor0: #263056;
+    --cor1: #3A4365;
+    --cor2: #5C6480;
 
     --font-padrão: Arial, Helvetica, sans-serif;
     --font-destaque: 'CloisterBlack', cursive;
@@ -28,7 +37,7 @@ a.externo::after{
     content: '\1F517\00a0' ;
   }
 header {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    background-color: var(--cor0);
     min-height: 150px;
     text-align: center;
     padding: 40px;
@@ -90,7 +99,7 @@ main h1 {
 }
 main h2 { 
     font-family: var(--fonte-outra);
-    color: rgba(0, 0, 0, 0.658);
+    color: white;
     font-size: 1.3em;
     background-image: linear-gradient( to right,  var(--cor1 ), transparent);
     text-indent: 8px;
@@ -117,15 +126,15 @@ main strong {
     padding: 2px 6px;
 }
 main a {
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     text-decoration: none;
-    color: var(--cor2);
+    color: lightskyblue;
     background-color: var(--cor0);
     padding: 2px 6px;
 }
 main a:hover{
     text-decoration: underline;
-    color: var(--cor1);
+    color: white;
 }
 
 main img {
@@ -179,4 +188,4 @@ footer{
 footer a:hover { 
     text-decoration: underline;
     color: var(--cor0);
-}
+}  
